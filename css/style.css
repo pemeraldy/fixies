@@ -1,0 +1,170 @@
+body{
+	margin: 20px auto;
+	width: 75%;
+	height: 100vh;
+}
+
+.hero{
+	background-color: black;
+}
+
+nav {
+    grid-row: 1/2;
+    grid-column: 1/13;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, minmax(0, auto));
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li.first {
+    grid-column: 3/5;
+}
+
+nav li.second {
+    grid-column: 6/8;
+}
+
+nav li.third {
+    grid-column: 9/11;
+}
+
+header {
+	color: white;
+    grid-row: 2/3;
+    height: 300px;
+    grid-column: 1/13;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header h1 {
+    grid-column: 6/13;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+p{
+	/* color: black; */
+
+}
+.lorem{
+	font-size: 11.5px;
+	opacity: .7;
+	line-height: 14px;
+	font-family:Franklin 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.text{
+	font-weight: bolder;
+}
+.thePics{
+
+	padding: 4px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	padding-top: 30px;
+	
+	
+}
+img{
+	border-radius: 7px;
+	width: 200px;
+	height: 150px;
+}
+.fa-star{
+	color: gold;
+	margin: 0;
+}
+
+.firstP{
+	width: min-content;
+	border: 1px solid rgba(0, 0, 0, .2);
+	padding: 5px;
+	border-radius: 7px;
+}
+span{
+	color: blue;
+	font-weight: bold;
+
+}
+.price{
+	font-weight: 600;
+}
+
+footer {
+	background-color: black;
+	color: white;
+    grid-row: 4/5;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, minmax(0, auto));
+    padding: 40px;
+    grid-gap: 10px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+    margin-top: 15px;
+
+}
+
+footer #footFirst {
+    grid-column: 2/4;
+}
+
+footer #footFirst h3 {
+    font-weight: 500;
+}
+
+footer #footFirst ul {
+    display: flex;
+}
+
+footer #footFirst li {
+    margin-left: 10px;
+}
+
+footer #footSecond {
+    grid-column: 7/8;
+}
+
+footer #footThird {
+    grid-column: 8/9;
+}
+
+footer #footFourth {
+    grid-column: 9/10;
+}
+
+footer #footFifth {
+    grid-column: 10/11;
+}
+
+footer #footSixth {
+    grid-column: 11/12;
+}
